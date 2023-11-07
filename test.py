@@ -62,6 +62,6 @@ def create_submission_file(model, x_test):
     df_submission.to_csv('submission.csv', index=False)
 
 
-X_test = np.load('X_train.npy/X_train.npy')
+X_test = np.load('X_test.npy/X_test.npy')
 model = torch.load('convolutional_NN.pth')
 create_submission_file(model, X_test)
